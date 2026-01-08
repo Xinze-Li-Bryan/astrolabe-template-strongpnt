@@ -1,0 +1,79 @@
+{
+  "nodes": {
+    "StrongPNT.PNT5_Strong.Strong_PNT": {
+      "size": 1.2,
+      "effect": "polyhedron-shell",
+      "notes": "# Strong Prime Number Theorem\n\n**Main Theorem**: The ultimate goal of this project.\n\n$$\\psi(x) = x + O\\left(\\frac{x}{(\\log x)^A}\\right)$$\n\nwhere $\\psi(x) = \\sum_{n \\leq x} \\Lambda(n)$ is the Chebyshev function and $\\Lambda$ is the von Mangoldt function.\n\n**Proof Strategy**:\n1. Express $\\psi(x)$ as a complex integral via Perron's formula\n2. Shift the integration contour using the zero-free region\n3. Estimate error terms from each part of the contour"
+    },
+    "StrongPNT.PNT4_ZeroFreeRegion.thm_final_result": {
+      "size": 1.2,
+      "effect": "polyhedron-shell",
+      "notes": "# Zero-Free Region (Final Result)\n\n**Core Theorem**: de la Vallée Poussin type zero-free region.\n\n$$\\zeta(\\sigma + it) \\neq 0 \\quad \\text{for} \\quad \\sigma > 1 - \\frac{c}{\\log(|t| + 2)}$$\n\n**This is the most critical technical result!**\n\nWithout the zero-free region, we cannot shift the contour."
+    },
+    "StrongPNT.PNT5_Strong.LogDerivZetaBoundedAndHolo": {
+      "notes": "# Log Derivative Bounded and Holomorphic\n\n**Key Lemma**: Shows $\\zeta'/\\zeta$ is bounded and holomorphic in the zero-free region.\n\nThis bridges the **zero-free region** to the **main theorem**:\n- Depends on `LogDerivZetaHolcLargeT'` (large $|t|$ case)\n- Depends on `LogDerivZetaHasBound` (bound definition)\n\nThis lemma enables safe contour shifting in Perron's formula."
+    },
+    "StrongPNT.PNT5_Strong.SmoothedChebyshev": {
+      "notes": "# Smoothed Chebyshev Function\n\n**Definition**: A smoothed version of the Chebyshev function.\n\n$$\\tilde{\\psi}(x) = \\sum_n \\Lambda(n) \\cdot \\phi\\left(\\frac{n}{x}\\right)$$\n\n**Why smoothing?**\n- Direct Perron integral converges poorly\n- Smooth $\\phi$ makes the Mellin transform decay rapidly\n- We then prove $\\tilde{\\psi}(x)$ approximates $\\psi(x)$ well"
+    },
+    "StrongPNT.PNT5_Strong.ChebyshevPsi": {
+      "notes": "# Chebyshev Psi Function\n\n**Definition**: The classical second Chebyshev function.\n\n$$\\psi(x) = \\sum_{n \\leq x} \\Lambda(n) = \\sum_{p^k \\leq x} \\log p$$\n\n**Key Properties**:\n- PNT $\\Leftrightarrow$ $\\psi(x) \\sim x$\n- Easier to handle than counting $\\pi(x)$ directly\n- Connected to analytic methods via $-\\zeta'/\\zeta$ Dirichlet series"
+    },
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevIntegrand": {
+      "notes": "# Smoothed Chebyshev Integrand\n\n**Definition**: The integrand appearing in Perron's formula.\n\nThe core expression when writing $\\tilde{\\psi}(x)$ as a complex integral."
+    },
+    "StrongPNT.PNT5_Strong.sigma1Of": {
+      "notes": "# Choice of σ₁\n\n**Theorem**: Integration path at $\\sigma_1 = 1 + 1/\\log x$.\n\n**Why this value?**\n- Ensures we're in $\\zeta$'s half-plane of convergence\n- Close enough to 1 for good error estimates\n- Stays within the \"safe zone\" of the zero-free region"
+    },
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevPull1": {
+      "notes": "# Contour Shift (Step 1)\n\n**Theorem**: Shift the integration path leftward from $\\sigma_1$.\n\nUses Cauchy's integral theorem:\n- Requires $\\zeta'/\\zeta$ holomorphic inside the contour\n- This is why we need the zero-free region"
+    },
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevPull2": {
+      "notes": "# Contour Shift (Step 2)\n\n**Theorem**: Handle horizontal line segment integrals.\n\nEstimates the integral from $\\sigma_1 + iT$ to $\\sigma_2 + iT$."
+    },
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevClose": {
+      "notes": "# Smoothing Approximation\n\n**Theorem**: $\\tilde{\\psi}(x)$ is close enough to $\\psi(x)$.\n\nProves the smoothing error is controlled:\n$$|\\tilde{\\psi}(x) - \\psi(x)| = O\\left(\\frac{x}{(\\log x)^A}\\right)$$"
+    },
+    "StrongPNT.PNT5_Strong.I1Bound": {
+      "notes": "# I₁ Integral Estimate\n\n**Theorem**: Bound for the first integral term.\n\n$$|I_1| = O\\left(\\frac{x}{(\\log x)^A}\\right)$$\n\nOne of the main contributors to the error term."
+    },
+    "StrongPNT.PNT5_Strong.I2Bound": {
+      "notes": "# I₂ Integral Estimate\n\n**Lemma**: Bound for the second integral term.\n\nHandles the vertical segment $[\\sigma_2 - iT, \\sigma_2 + iT]$ contribution."
+    },
+    "StrongPNT.PNT5_Strong.I3Bound": {
+      "notes": "# I₃ Integral Estimate\n\n**Theorem**: Bound for the third integral term.\n\nHorizontal segment estimate, depends on growth rate of $\\zeta'/\\zeta$."
+    },
+    "StrongPNT.ZetaZeroFree.LogDerivZetaHolcLargeT'": {
+      "notes": "# Holomorphy for Large |t|\n\n**Theorem**: $\\zeta'/\\zeta$ is holomorphic in the zero-free region when $|t|$ is large.\n\nZero-free region form:\n$$\\sigma > 1 - \\frac{c}{\\log |t|}$$\n\nHandles the \"away from real axis\" case."
+    },
+    "StrongPNT.PNT5_Strong.LogDerivZetaHasBound": {
+      "notes": "# Log Derivative Bound (Definition)\n\n**Definition**: Formalizes \"$\\zeta'/\\zeta$ is bounded in a given region\".\n\nSpecifies region and bound $M$ such that $|\\zeta'/\\zeta(s)| \\leq M$."
+    },
+    "StrongPNT.PNT4_ZeroFreeRegion.ZetaZeroFree_p": {
+      "notes": "# Zero-Free (Partial Case)\n\n**Lemma**: Intermediate step proving $\\zeta(s) \\neq 0$.\n\nHandles specific parameter ranges, applies `zerofree`."
+    },
+    "StrongPNT.PNT4_ZeroFreeRegion.LogDerivZetaBndUnif2": {
+      "notes": "# Log Derivative Uniform Bound\n\n**Lemma**: Uniform upper bound for $\\zeta'/\\zeta$.\n\n$$\\left|\\frac{\\zeta'}{\\zeta}(s)\\right| \\leq c \\log^2(|t| + 2)$$\n\nUsed to control integral growth."
+    },
+    "StrongPNT.PNT4_ZeroFreeRegion.zerofree": {
+      "notes": "# Zero-Free (Core Argument)\n\n**Lemma**: Core technique for proving the zero-free region.\n\n**Key Tools**:\n1. **Trigonometric inequality**: $3 + 4\\cos\\theta + \\cos 2\\theta \\geq 0$\n2. **Mertens estimate**: behavior of $\\zeta(s)$ near $s=1$\n3. Proof by contradiction: assume a zero exists, derive contradiction"
+    },
+    "StrongPNT.PNT4_ZeroFreeRegion.zerofree_constant": {
+      "notes": "# Zero-Free Constant\n\n**Definition**: Explicit constant in the zero-free region.\n\n$$c = \\frac{1}{9.645908801}$$\n\nThis constant determines the \"width\" of the zero-free region and directly affects the error term in PNT."
+    },
+    "StrongPNT.PNT4_ZeroFreeRegion.zeroZ": {
+      "notes": "# Hypothetical Zero Parametrization\n\n**Definition**: Suppose $\\zeta(\\rho) = 0$ where $\\rho = \\beta + i\\gamma$.\n\nUsed in proof by contradiction:\n1. Assume a zero exists\n2. Derive a contradiction\n3. Therefore no zero exists"
+    },
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevDirichlet": {
+      "notes": "# Smoothed Chebyshev via Dirichlet\n\n**Theorem**: Perron formula representation of smoothed Chebyshev.\n\n$$\\tilde{\\psi}(x) = -\\frac{1}{2\\pi i} \\int_{c-i\\infty}^{c+i\\infty} \\frac{\\zeta'}{\\zeta}(s) \\tilde{\\phi}(s) x^s \\frac{ds}{s}$$\n\nThe bridge between arithmetic and analytic functions."
+    },
+    "StrongPNT.PNT5_Strong.LogDerivativeDirichlet": {
+      "notes": "# Log Derivative Dirichlet Series\n\n**Theorem**: Series expansion of $\\zeta'/\\zeta$.\n\n$$-\\frac{\\zeta'}{\\zeta}(s) = \\sum_{n=1}^{\\infty} \\frac{\\Lambda(n)}{n^s}$$\n\nThis identity is the starting point of Perron's formula:\n- LHS is an analytic function\n- RHS contains the $\\Lambda(n)$ we want"
+    },
+    "StrongPNT.PNT5_Strong.dlog_riemannZeta_bdd_on_vertical_lines'": {
+      "notes": "# Bounded on Vertical Lines\n\n**Theorem**: $\\zeta'/\\zeta$ is bounded on vertical lines $\\Re(s) = \\sigma$.\n\nUsed to estimate vertical segments in Perron's integral, ensuring convergence."
+    }
+  },
+  "edges": {},
+  "macros": {}
+}

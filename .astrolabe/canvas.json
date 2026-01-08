@@ -1,0 +1,45 @@
+{
+  "version": "1.1",
+  "updated_at": "2026-01-08T02:12:03.950158Z",
+  "visible_nodes": [
+    "StrongPNT.PNT5_Strong.Strong_PNT",
+    "StrongPNT.PNT5_Strong.LogDerivZetaBoundedAndHolo",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshev",
+    "StrongPNT.PNT5_Strong.ChebyshevPsi",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevIntegrand",
+    "StrongPNT.PNT5_Strong.sigma1Of",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevPull1",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevPull2",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevClose",
+    "StrongPNT.PNT5_Strong.I1Bound",
+    "StrongPNT.PNT5_Strong.I2Bound",
+    "StrongPNT.PNT5_Strong.I3Bound",
+    "StrongPNT.ZetaZeroFree.LogDerivZetaHolcLargeT'",
+    "StrongPNT.PNT5_Strong.LogDerivZetaHasBound",
+    "StrongPNT.PNT4_ZeroFreeRegion.ZetaZeroFree_p",
+    "StrongPNT.PNT4_ZeroFreeRegion.thm_final_result",
+    "StrongPNT.PNT4_ZeroFreeRegion.LogDerivZetaBndUnif2",
+    "StrongPNT.PNT4_ZeroFreeRegion.zerofree",
+    "StrongPNT.PNT4_ZeroFreeRegion.zerofree_constant",
+    "StrongPNT.PNT4_ZeroFreeRegion.zeroZ",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevDirichlet",
+    "StrongPNT.PNT5_Strong.LogDerivativeDirichlet",
+    "StrongPNT.PNT5_Strong.dlog_riemannZeta_bdd_on_vertical_lines'"
+  ],
+  "positions": {},
+  "viewport": {
+    "camera_position": [
+      -20.32146211989396,
+      5.453943343851287,
+      -23.13809962859947
+    ],
+    "camera_target": [
+      1.5305538582841294,
+      -3.783578697422251,
+      4.601681022056681
+    ],
+    "zoom": 1.0,
+    "selected_node_id": "StrongPNT.PNT5_Strong.Strong_PNT",
+    "selected_edge_id": "StrongPNT.PNT5_Strong.sigma1Of->StrongPNT.PNT5_Strong.ChebyshevPsi"
+  }
+}
