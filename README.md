@@ -23,7 +23,7 @@ Thanks to [Math Inc.](https://www.math.inc/) and the original contributors ([@au
 
 ## Usage with Astrolabe
 
-1. **Install Astrolabe** from [Releases](https://github.com/Xinze-Li-Bryan/Astrolabe/releases)
+1. **Get Astrolabe** from [GitHub](https://github.com/Xinze-Li-Bryan/Astrolabe)
 
 2. **Clone this template:**
    ```bash
