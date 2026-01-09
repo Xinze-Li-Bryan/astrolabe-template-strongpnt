@@ -41,7 +41,9 @@
       "notes": "# I₂ Integral Estimate\n\n**Lemma**: Bound for the second integral term.\n\nHandles the vertical segment $[\\sigma_2 - iT, \\sigma_2 + iT]$ contribution."
     },
     "StrongPNT.PNT5_Strong.I3Bound": {
-      "notes": "# I₃ Integral Estimate\n\n**Theorem**: Bound for the third integral term.\n\nHorizontal segment estimate, depends on growth rate of $\\zeta'/\\zeta$."
+      "notes": "# I₃ Integral Estimate\n\n**Theorem**: Bound for the third integral term.\n\nHorizontal segment estimate, depends on growth rate of $\\zeta'/\\zeta$.",
+      "size": 1.2,
+      "effect": "orbiting-moons"
     },
     "StrongPNT.ZetaZeroFree.LogDerivZetaHolcLargeT'": {
       "notes": "# Holomorphy for Large |t|\n\n**Theorem**: $\\zeta'/\\zeta$ is holomorphic in the zero-free region when $|t|$ is large.\n\nZero-free region form:\n$$\\sigma > 1 - \\frac{c}{\\log |t|}$$\n\nHandles the \"away from real axis\" case."
@@ -72,8 +74,20 @@
     },
     "StrongPNT.PNT5_Strong.dlog_riemannZeta_bdd_on_vertical_lines'": {
       "notes": "# Bounded on Vertical Lines\n\n**Theorem**: $\\zeta'/\\zeta$ is bounded on vertical lines $\\Re(s) = \\sigma$.\n\nUsed to estimate vertical segments in Perron's integral, ensuring convergence."
+    },
+    "custom-1767879605365": {
+      "name": "Custom",
+      "kind": "custom",
+      "references": []
     }
   },
-  "edges": {},
+  "edges": {
+    "custom-1767879605365->StrongPNT.PNT4_ZeroFreeRegion.zeroZ": {
+      "source": "custom-1767879605365",
+      "target": "StrongPNT.PNT4_ZeroFreeRegion.zeroZ",
+      "type": "custom",
+      "style": "spring"
+    }
+  },
   "macros": {}
 }

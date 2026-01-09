@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "updated_at": "2026-01-08T02:12:03.950158Z",
+  "updated_at": "2026-01-08T14:45:05.842136Z",
   "visible_nodes": [
     "StrongPNT.PNT5_Strong.Strong_PNT",
     "StrongPNT.PNT5_Strong.LogDerivZetaBoundedAndHolo",
@@ -18,25 +18,41 @@
     "StrongPNT.PNT5_Strong.LogDerivZetaHasBound",
     "StrongPNT.PNT4_ZeroFreeRegion.ZetaZeroFree_p",
     "StrongPNT.PNT4_ZeroFreeRegion.thm_final_result",
-    "StrongPNT.PNT4_ZeroFreeRegion.LogDerivZetaBndUnif2",
     "StrongPNT.PNT4_ZeroFreeRegion.zerofree",
-    "StrongPNT.PNT4_ZeroFreeRegion.zerofree_constant",
     "StrongPNT.PNT4_ZeroFreeRegion.zeroZ",
     "StrongPNT.PNT5_Strong.SmoothedChebyshevDirichlet",
     "StrongPNT.PNT5_Strong.LogDerivativeDirichlet",
-    "StrongPNT.PNT5_Strong.dlog_riemannZeta_bdd_on_vertical_lines'"
+    "StrongPNT.PNT5_Strong.dlog_riemannZeta_bdd_on_vertical_lines'",
+    "StrongPNT.PNT4_ZeroFreeRegion.LogDerivZetaBndUnif2",
+    "StrongPNT.PNT4_ZeroFreeRegion.zerofree_constant_pos",
+    "StrongPNT.PNT4_ZeroFreeRegion.zerofree_constant_lt_one",
+    "StrongPNT.PNT4_ZeroFreeRegion.zerofree_constant",
+    "StrongPNT.PNT2_LogDerivative.lem_three_gt_e",
+    "StrongPNT.PNT4_ZeroFreeRegion.lem_logDerivZetalogt32",
+    "StrongPNT.PNT4_ZeroFreeRegion.lem_logDerivZetalogt0",
+    "StrongPNT.PNT4_ZeroFreeRegion.deltaz_t",
+    "StrongPNT.PNT4_ZeroFreeRegion.deltaz",
+    "StrongPNT.PNT5_Strong.I8Bound",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevClose_aux",
+    "StrongPNT.ZetaZeroFree.ZetaNoZerosInBox'",
+    "StrongPNT.ZetaZeroFree.ZetaCont'",
+    "StrongPNT.PNT5_Strong.SmoothedChebyshevPull1_aux_integrable",
+    "StrongPNT.PNT5_Strong.dlog_riemannZeta_bdd_on_vertical_lines",
+    "StrongPNT.PNT5_Strong.summable_real_iff_summable_coe_complex",
+    "StrongPNT.PNT5_Strong.cast_pow_eq",
+    "custom-1767879605365"
   ],
   "positions": {},
   "viewport": {
     "camera_position": [
-      -20.32146211989396,
-      5.453943343851287,
-      -23.13809962859947
+      -4.170479569842062,
+      -1.42808616404696,
+      25.516093185225294
     ],
     "camera_target": [
-      1.5305538582841294,
-      -3.783578697422251,
-      4.601681022056681
+      3.4888271626904093,
+      -1.42808616405706,
+      7.040838914255589
     ],
     "zoom": 1.0,
     "selected_node_id": "StrongPNT.PNT5_Strong.Strong_PNT",
