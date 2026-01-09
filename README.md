@@ -17,9 +17,9 @@ This repository is an [Astrolabe](https://github.com/Xinze-Li-Bryan/Astrolabe) t
 - Blueprint LaTeX files
 - Home page / documentation build scripts
 
-## Original Project
+## Acknowledgments
 
-The Strong Prime Number Theorem formalization was created by [Math Inc.](https://www.math.inc/) using the Gauss autoformalization agent. See the [original repository](https://github.com/math-inc/strongpnt) for full details.
+Thanks to [Math Inc.](https://www.math.inc/) and the original contributors ([@augustepoiroux](https://github.com/augustepoiroux) and others) for creating this formalization using the Gauss autoformalization agent. See the [original repository](https://github.com/math-inc/strongpnt) for full details.
 
 ## Usage with Astrolabe
 
@@ -50,6 +50,10 @@ astrolabe-template-strongpnt/
 ├── lakefile.toml         # Lake build config
 └── lean-toolchain        # Lean version
 ```
+
+## Feedback
+
+We welcome everyone to explore Lean 4 projects with Astrolabe! If you have any issues or suggestions, please report them to the [Astrolabe main repository](https://github.com/Xinze-Li-Bryan/Astrolabe/issues).
 
 ## License
 
